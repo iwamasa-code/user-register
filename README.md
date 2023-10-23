@@ -1,18 +1,39 @@
-# Vue 3 + TypeScript + Vite
+# アプリケーション名
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+user-register
+​
 
-## Recommended IDE Setup
+## アプリケーションの作成に至る背景
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Vue3 をある程度インプットしたため、自身の理解を図るべく作成
+​
 
-## Type Support For `.vue` Imports in TS
+## 定義
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+エディタ：vscode
+フロント：Vue3 × Vite（TypeScript）
+node: v18.18.2
+npm: 7.17.0
+yarn: 1.22.10
+データベース：FireBase
+追々、MySQL にする。
+スタイル：css（style scoped）
+ソースコード：GitHub（user-register）
+​
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## 用件定義
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- 機能
+  名前と年齢を入力した際に、リスト形式で追加していく。
+  最大 10 名まで。
+  ​
+  名前の入力、もしくは年齢の入力が無い場合はエラーを出す。
+  ​
+- データログ
+  ユーザー名は name、年齢は age で記載。
+  データは Firebase で管理。
+​
+
+## 起動
+
+yarn dev
