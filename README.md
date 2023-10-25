@@ -10,27 +10,27 @@ Vue3 をある程度インプットしたため、自身の理解を図るべく
 
 ## 定義
 
-エディタ：vscode
-フロント：Vue3 × Vite（TypeScript）
-node: v18.18.2
-npm: 7.17.0
-yarn: 1.22.10
-データベース：FireBase
-追々、MySQL にする。
-スタイル：css（style scoped）
-ソースコード：GitHub（user-register）
+- エディタ：vscode
+- フロント：Vue3 × Vite（TypeScript）
+- node: v18.18.2
+- npm: 7.17.0
+- yarn: 1.22.10
+- データベース：FireBase(追々、MySQL にする。)
+- スタイル：css（style scoped）
+- コード管理：GitHub
 ​
 
 ## 用件定義
 
 - 機能
   名前と年齢を入力した際に、リスト形式で追加していく。
-  最大 10 名まで。
+  最大 5 名まで。
   ​
-  名前の入力、もしくは年齢の入力が無い場合はエラーを出す。
+  名前の入力、もしくは年齢の入力が無い場合はボタンを押せないようにする。
   ​
 - データログ
-  ユーザー名は name、年齢は age で記載。
+  - ユーザー名: name,
+  - 年齢: age,
   データは Firebase で管理。
 ​
 
